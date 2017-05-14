@@ -2,7 +2,9 @@
 title: 'Reproducible Research Course Project'
 author: "Noel Temena"
 date: "May 12, 2017"
-output: html_document
+output: 
+  html_document: 
+    keep_md: yes
 ---
 John Hopkins Coursera Project Instructions:
 
@@ -55,7 +57,7 @@ __What is mean total number of steps taken per day?__
 Calculate the SUM,MEAN and MEDIAN of steps taken each day  
 Plot the total sum of steps  
 
-```{r}
+```{r echo=TRUE}
 DaySteps <- mydata %>% 
             group_by(date) %>% 
             summarise(

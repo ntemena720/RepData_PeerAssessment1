@@ -105,7 +105,7 @@ axis(side =1,tick = 288)
 Maxsteps <- max(TimeSteps$TotalSteps)
 Maxtime <- filter(TimeSteps,TotalSteps == Maxsteps)
 abline( v=Maxtime[1,1], col= "blue", lwd= 2)
-legend("center",paste(floor(Maxtime[2])," maximum steps"),cex=.8, col="blue",lwd=2)
+legend("center",paste(floor(Maxtime[2])," maximum steps at ", Maxtime[1]," timeinterval"),cex=.8, col="blue",lwd=2)
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
